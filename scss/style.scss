@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Source Code Pro", sans-serif ;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.header{
+  background-image: url(../img/header-bg.jpg);
+  min-height: 793px;
+  background-size: cover;
+  background-position: top center;
+}
+
+.container{
+  max-width: 2000px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__top{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.menu-list{
+  display: flex;
+}
+
+.menu-list li + li{
+  padding-left: 50px;
+}
+
+.menu-list a{
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.login{
+  padding-right: 44px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sign-up{
+  text-transform: uppercase;
+  color: #250f8a;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 8px 43px;
+  border-radius: 20px;
+}
