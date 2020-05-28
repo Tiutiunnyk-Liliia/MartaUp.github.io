@@ -3,7 +3,7 @@
 }
 
 body{
-  font-family: "Source Code Pro", sans-serif ;
+  font-family: "Source Code Pro",sans-serif ;
   font-size: 15px;
   line-height: 24px;
 }
@@ -22,7 +22,7 @@ a{
 }
 
 .container{
-  max-width: 2000px;
+  max-width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -70,3 +70,65 @@ a{
   padding: 8px 43px;
   border-radius: 20px;
 }
+
+.header-slider{
+  padding-top: 111px;
+  &__item-content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item-info{
+    max-width: 506px;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  &__description{
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+  &__btn{
+    text-transform: uppercase;
+    color: #250f8a;
+    font-weight: 600;
+    padding: 13px 39px;
+    background-color: #FFCA00;
+    border-radius: 25px;
+  }
+  &__item-images{
+    margin-right: 82px;
+    margin-top: 10px;
+  }
+}
+
+.header-dots {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.header-dots button{
+  border: none;
+  background-color: #fff;
+  opacity: .5;
+  font-size: 0;
+  padding: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px auto;
+  display: block;
+}
+
+.header-dots .slick-active button{
+  width: 15px;
+  opacity: 1;
+}
+
