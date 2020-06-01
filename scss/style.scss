@@ -73,18 +73,22 @@ a{
 
 .header-slider{
   padding-top: 111px;
+
+  &__item{
+    height: 100%;
+  }
   &__item-content{
     display: flex;
     justify-content: space-between;
   }
   &__item-info{
     max-width: 506px;
+    color: #fff;
   }
   &__title{
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
-    color: #fff;
     margin-bottom: 10px;
   }
   &__description{
@@ -106,11 +110,16 @@ a{
   }
 }
 
+.slick-vertical .slick-slide{
+  border: 0;
+}
+
 .header-dots {
   list-style: none;
   position: absolute;
   right: 0;
   top: 50%;
+  transform: translateY(50%);
 }
 .header-dots button{
   border: none;
@@ -304,6 +313,112 @@ a{
   margin-left: 20px;
 }
 
+@media (max-width: 1190px){
+  .header-slider{
+    padding-top: 20px;
+    height: auto;
+  }
+  .header-slider__item-images{
+    margin: 10px 20px 0 0;
+  }
+  .header-slider__item-images img{
+    width: 80%;
+  }
+  .header-slider__item-info{
+    padding: 50px 0;
+    height: auto;
+  }
+}
+
+@media (max-width: 924px) {
+  .header__top{
+    flex-wrap: wrap;
+  }
+  .header-btn{
+    width: 100%;
+    text-align: right;
+  }
+  .login{
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 900px){
+  .header-slider__item-images{
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .header{
+    min-height: 580px;
+  }
+  .menu-list{
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    background-color: #1a50a8;
+    z-index: 5;
+  }
+  .menu-list li + li {
+    padding-left: 0;
+  }
+  .menu-list a{
+    display: block;
+    padding: 10px 0;
+  }
+
+  .menu__btn{
+    width: 30px;
+    height: 20px;
+    position: relative;
+  }
+  .menu__btn:after,
+  .menu__btn:before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+  }
+  .menu__btn:after{
+    top: 0;
+  }
+  .menu__btn:before{
+    bottom: 0;
+  }
+  .menu__btn span{
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 9px;
+  }
+
+  .header-slider__item-info{
+    padding: 10px 30px 10px 0;
+  }
+  .header-slider__description{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .header-slider__title{
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+
+}
+
+@media (min-width: 570px) {
+  .menu-list{
+    display: flex !important;
+  }
+}
 
 
 
