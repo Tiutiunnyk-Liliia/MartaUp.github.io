@@ -378,6 +378,13 @@ a{
     width: 70%;
     margin-top: 40px;
   }
+  .reviews__items{
+    flex-wrap: wrap;
+  }
+  .reviews__item{
+    width: 48%;
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 924px) {
@@ -432,6 +439,29 @@ a{
   .specialised__item{
     width: 50%;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 685px)  {
+  .reviews{
+    padding: 35px;
+  }
+  .reviews__items{
+    display: block;
+  }
+  .reviews__item{
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px){
+ .footer__inner{
+   display: block;
+   text-align: center;
+   padding: 20px 10px 17px;
+ }
+  .footer__link{
+    margin-bottom: 10px;
   }
 }
 
